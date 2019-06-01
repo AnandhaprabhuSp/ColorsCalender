@@ -100,9 +100,9 @@ class MonthlyCalender extends Component {
                     style={customStyles}>
                     <h2>Event</h2>
                     <h3>Date: {this.event.date}-June-2019</h3>
-                    <h6>Event Name:<input className="inputs" type="text" name="evt-name" ref={value => this.event.name = value} /></h6>
-                    <h6>Time from:<input type="time" name="evt-time" ref={value => this.event.timeFrom = value} /></h6>
-                    <h6>Time to:<input type="time" name="evt-time" ref={value => this.event.timeTo = value} /></h6>
+                    <h5>Event Name:<input className="inputs" type="text" name="evt-name" ref={value => this.event.name = value} /></h5>
+                    <h5>Time from:<input type="time" name="evt-time" ref={value => this.event.timeFrom = value} /></h5>
+                    <h5>Time to:<input type="time" name="evt-time" ref={value => this.event.timeTo = value} /></h5>
                     <button onClick={this.pushEvent}>Remind Me!</button>
                 </Modal>
                 <DisplayEventList events={this.state.eventsList} month={this.state.month} />
