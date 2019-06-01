@@ -1,0 +1,44 @@
+.calender-container {
+    width: 75%;
+    /* background-color: #777; */
+    margin: 0 auto;
+}
+
+.days-container,.date-container {
+    width: 101%;
+    display: block;
+}
+
+.each-day,
+.each-date {
+    display: inline-block;
+    width: 13%;
+    height: 75px;
+    /* float: left; */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+    border: 1px solid #636e72;
+    border-radius: 3px;
+}
+.each-day{
+    background-color: #ff7675;
+}
+.each-date{
+    cursor: pointer;
+}
+.disable{
+    background-color:#dfe6e9;
+    cursor: not-allowed;
+}
+
+button{
+    height: 30px;
+    background-color: #ff7675;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

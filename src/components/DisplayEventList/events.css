@@ -1,0 +1,37 @@
+.events-container {
+    display: block;
+}
+
+.inline {
+    display: inline-block;
+    text-align: left;
+    height: 75px;
+    border-radius: 3px;
+}
+
+.date {
+    width: 20%;
+    background-color: #fab1a0;
+    height: 75px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 75px;
+}
+
+.name {
+    width: 40%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+    border-radius: 3px;
+    background-color: #dfe6e9;
+
+}
+
+.from,
+.to {
+    width: 20%;
+    background-color: #dfe6e9;
+    text-align: center;
+    line-height: 75px;
+}
