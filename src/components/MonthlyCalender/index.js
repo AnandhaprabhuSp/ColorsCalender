@@ -34,7 +34,7 @@ class MonthlyCalender extends Component {
             "date": "1",
             "from": "01:00",
             "to": "01:00"
-          }];
+        }];
         this.state = {
             month: month,
             days: days,
@@ -68,7 +68,7 @@ class MonthlyCalender extends Component {
     }
     pushEvent() {
         let eventDetails = { name: this.event.name.value, date: this.event.date, from: this.event.timeFrom.value, to: this.event.timeTo.value };
-        if(eventDetails.name !== '' && eventDetails.date !== '' && eventDetails.from !== '' && eventDetails.to !== ''){
+        if (eventDetails.name !== '' && eventDetails.date !== '' && eventDetails.from !== '' && eventDetails.to !== '') {
             this.setState({
                 eventsList: this.state.eventsList.concat(eventDetails)
             });
@@ -98,12 +98,12 @@ class MonthlyCalender extends Component {
                     onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.closeModal}
                     style={customStyles}>
-                    <h2>Event</h2>
-                    <h3>Date: {this.event.date}-June-2019</h3>
-                    <h5>Event Name:<input className="inputs" type="text" name="evt-name" ref={value => this.event.name = value} /></h5>
+                    <h2 className='center-text'>Remainder</h2>
+                    <h3 className='center-text'>{this.event.date}-June-2019</h3>
+                    <h5>Event Name:<input className="inputs" placeHolder=":)" type="text" name="evt-name" ref={value => this.event.name = value} /></h5>
                     <h5>Time from:<input type="time" name="evt-time" ref={value => this.event.timeFrom = value} /></h5>
                     <h5>Time to:<input type="time" name="evt-time" ref={value => this.event.timeTo = value} /></h5>
-                    <button onClick={this.pushEvent}>Remind Me!</button>
+                    <h3 className='center-text' onClick={this.pushEvent}>Remind Me!</h3>
                 </Modal>
                 <DisplayEventList events={this.state.eventsList} month={this.state.month} />
             </div>

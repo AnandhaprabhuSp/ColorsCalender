@@ -4,7 +4,8 @@
     margin: 0 auto;
 }
 
-.days-container,.date-container {
+.days-container,
+.date-container {
     width: 101%;
     display: block;
 }
@@ -21,38 +22,44 @@
     border: 1px solid #636e72;
     border-radius: 3px;
 }
-.each-day{
+
+.each-day {
     background-color: #ff7675;
 }
-.each-date{
+
+.each-date {
     cursor: pointer;
 }
-.disable{
-    background-color:#dfe6e9;
+
+.disable {
+    background-color: #dfe6e9;
     cursor: not-allowed;
 }
 
-button{
+button {
     height: 30px;
     background-color: #ff7675;
     border: none;
-    color: white;
+    /* color: white; */
+    width: 100%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
 }
 
-input[type=text] {
+input[type=text],
+input[type=time] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-  }
+}
 
-  input[type=time] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
+.center-text {
+    text-align: center;
+}
+h3.center-text{
+    background-color: #ff7675;
+    padding: 15px;
+}
