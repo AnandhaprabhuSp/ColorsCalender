@@ -18,6 +18,7 @@ class DisplayEventList extends Component {
             <div className="events-container">
                 <h4>{month} Remainders!!!</h4>
                 {evtsLists}
+            <div className='break'></div>
             </div>
         );
     }

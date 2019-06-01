@@ -40,7 +40,7 @@ class MonthlyCalender extends Component {
             days: days,
             date: date,
             modalIsOpen: false,
-            eventsList: tempEvents
+            eventsList: []//tempEvents
         }
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);

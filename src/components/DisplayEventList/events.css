@@ -35,3 +35,12 @@
     text-align: center;
     line-height: 75px;
 }
+.break{
+    display: block;
+    height: 2px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+
+    background-color: #dfe6e9;
+    
+}
